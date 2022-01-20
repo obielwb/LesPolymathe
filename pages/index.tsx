@@ -48,12 +48,10 @@ const Home: NextPage = () => {
             </div>
             <div id="propose-text-body">
               <p>
-                lorem ipsum leraas
-                ak então foi assim que foi feito sério foi assim , memsmo
-                cozinha, artes, dança, linguas e muito mais.
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
                 <br />
                 <br />
-                Então assim surgiu a ideia de criar uma maneira de conectar todo esse conhecimento a você, por isso foi criada A Les Polymathes (Os Polímatas em Francês).
+                id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
               </p>
             </div>
           </div>
