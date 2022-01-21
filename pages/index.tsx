@@ -14,6 +14,7 @@ import { Suspense, useEffect } from 'react';
 import Model from '../components/Thinker';
 import { RegisterButton } from '../components/registerButton';
 import { KnowledgeTopic } from '../components/knowledgeTopic';
+import { line1, line2, line3, line4 } from '../utils/topics';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -21,7 +22,6 @@ const Home: NextPage = () => {
   });
   return (
     <div>
-      {/* <Image className="bg-blur" src={BgBlur}></Image> */}
       <main className="app">
         <section className="initial">
           {/* <Canvas>
@@ -58,13 +58,34 @@ const Home: NextPage = () => {
           <Image className="propose-image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image>
         </section>
         <section className="topics">
-          <KnowledgeTopic topic="History"/>
           <div className="line">
-
+            {line1.map(topic => {
+              return (
+                <KnowledgeTopic title={topic.title}/>
+              )
+            })}
           </div>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+          <div className="line">
+            {line2.map(topic => {
+              return (
+                <KnowledgeTopic title={topic.title}/>
+              )
+            })}
+          </div>
+          <div className="line">
+            {line3.map(topic => {
+              return (
+                <KnowledgeTopic title={topic.title}/>
+              )
+            })}
+          </div>
+          <div className="line">
+            {line4.map(topic => {
+              return (
+                <KnowledgeTopic title={topic.title}/>
+              )
+            })}
+          </div>
         </section>
         <section className="final-register-area">
 
