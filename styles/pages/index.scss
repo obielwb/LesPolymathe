@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10rem;
+  margin-bottom: 10em;
 }
 
 #blur {
@@ -23,8 +24,6 @@
 
 // Sections =======================
 section {
-  // height: 40vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +156,23 @@ section.topics {
         }
       }
     }
+  }
+
+  p {
+    margin-top: 3rem;
+    font-size: 4.5em;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+section.final-register-area {
+  margin-top: 14em;
+
+  .da-vinci-sketches-image {
+    aspect-ratio: 16/9;
+    border-radius: .5rem;
+    filter: brightness(0.8);
   }
 }
 

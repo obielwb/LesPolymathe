@@ -5,8 +5,8 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
 import LibertyLeadingThePeople from '../assets/liberty-leading-the-people.svg';
+import DaVinciSketches from '../assets/DaVinciSketches.svg';
 
 import { Canvas } from '@react-three/fiber'
 import { Html, OrbitControls } from '@react-three/drei';
@@ -88,9 +88,10 @@ const Home: NextPage = () => {
               )
             })}
           </div>
+          <p>lorem Ipslum os serifaire aslqual</p>
         </section>
         <section className="final-register-area">
-
+          <Image src={DaVinciSketches} className="da-vinci-sketches-image"></Image>
         </section>
       </main>
     </div>
