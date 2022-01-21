@@ -1,12 +1,12 @@
 type KnowledgeTopicProps = {
-  topic: string
+  title: string
   // imgSrc: string
 }
 
 export function KnowledgeTopic(props: KnowledgeTopicProps) {
   return (
     <div className="knowledge-topic">
-      {props.topic}
+      {props.title}
     </div>
   );
 }
