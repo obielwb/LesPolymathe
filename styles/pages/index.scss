@@ -122,11 +122,41 @@ section.topics {
   gap: 1rem;
 
   .line {
+    position: relative;
+    left: -10rem;
+
     display: flex;
     flex-direction: row;
     align-items: center;
 
     gap: 1.5rem;
+
+
+    &.line-odd {
+      animation: go-to-right 10s infinite alternate;
+
+      @keyframes go-to-right {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(25%);
+        }
+      }
+    }
+
+    &.line-pair {
+      animation: go-to-left 10s infinite alternate;
+
+      @keyframes go-to-left {
+        from {
+          transform: translateX(25%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    }
   }
 }
 

@@ -5,16 +5,18 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 import LibertyLeadingThePeople from '../assets/liberty-leading-the-people.svg';
-import BgBlur from '../assets/constrast-blur.svg'
 
 import { Canvas } from '@react-three/fiber'
 import { Html, OrbitControls } from '@react-three/drei';
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import Model from '../components/Thinker';
 import { RegisterButton } from '../components/registerButton';
 import { KnowledgeTopic } from '../components/knowledgeTopic';
 import { line1, line2, line3, line4 } from '../utils/topics';
+
+
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -58,28 +60,28 @@ const Home: NextPage = () => {
           <Image className="propose-image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image>
         </section>
         <section className="topics">
-          <div className="line">
+          <div className={`line line-odd`} id={`line1`}>
             {line1.map(topic => {
               return (
                 <KnowledgeTopic title={topic.title}/>
               )
             })}
           </div>
-          <div className="line">
+          <div className={`line line-pair`} id={`line2`}>
             {line2.map(topic => {
               return (
                 <KnowledgeTopic title={topic.title}/>
               )
             })}
           </div>
-          <div className="line">
+          <div className={`line line-odd`} id={`line3`}>
             {line3.map(topic => {
               return (
                 <KnowledgeTopic title={topic.title}/>
               )
             })}
           </div>
-          <div className="line">
+          <div className={`line line-pair`} id={`line4`}>
             {line4.map(topic => {
               return (
                 <KnowledgeTopic title={topic.title}/>
