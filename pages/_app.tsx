@@ -29,7 +29,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           <a href="#">History</a>
           <div className="dot"></div>
         </nav>
-        <RegisterButton>Register</RegisterButton>
       </header>
 
       <Component {...pageProps} />
