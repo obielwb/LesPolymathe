@@ -105,9 +105,13 @@ section.resume {
   }
 
   .propose-image {
-    width: 100%;
     aspect-ratio: 16/9;
     border-radius: .3rem;
+
+    .image {
+      width: 100%;
+    }
+
   }
 }
 
@@ -115,14 +119,39 @@ section.resume {
   section.resume {
     display: block;
 
-    #propose-text {
+    #propose-text  {
       width: min(50%, 23rem);
+      // z-index: 8;
     }
 
     .propose-image {
-      margin-top: 4em !important;
-      margin-left: 6rem !important;
-      aspect-ratio: 16/9;
+      display: flex;
+      flex-direction: row;
+      margin-top: 2rem;
+      // z-index: 7;
+      aspect-ratio: 15/8;
+      width: 80%;
+      height: 80%;
+      justify-content: flex-end;
+
+      .image {
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.resume {
+    width: 80%;
+    #propose-text {
+      width: max(50%, 23rem);
+    }
+
+    .propose-image {
+      width: 100%;
+      height: 100%;
+      margin-top: -4rem;
     }
   }
 }
