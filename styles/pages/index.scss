@@ -121,7 +121,7 @@ section.resume {
 
     #propose-text  {
       width: min(50%, 23rem);
-      // z-index: 8;
+      z-index: 8 !important;
     }
 
     .propose-image {
@@ -146,6 +146,8 @@ section.resume {
     width: 80%;
     #propose-text {
       width: max(50%, 23rem);
+      z-index: 8 !important;
+
     }
 
     .propose-image {
@@ -210,6 +212,14 @@ section.topics {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  section.topics {
+    p {
+      font-size: 2.4rem;
+    }
+  }
+}
+
 
 
 section.final-register-area {
@@ -219,6 +229,18 @@ section.final-register-area {
     aspect-ratio: 16/9;
     border-radius: .5rem;
     filter: brightness(0.8);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    margin-bottom: 0;
+  }
+  section.final-register-area {
+    width: 200%;
+    height: 40rem;
+    overflow: hidden;
+    margin-bottom: 0;
   }
 }
 
