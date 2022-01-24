@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 import LibertyLeadingThePeople from '../assets/liberty-leading-the-people.svg';
 import DaVinciSketches from '../assets/DaVinciSketches.svg';
 
+
 import { Canvas } from '@react-three/fiber'
 import { Html, OrbitControls } from '@react-three/drei';
 import { Suspense, useEffect, useState } from 'react';
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
   useEffect(() => {
     AOS.init({duration: 2000});
   });
+
   return (
     <div>
       <main className="app">
@@ -57,7 +59,10 @@ const Home: NextPage = () => {
               </p>
             </div>
           </div>
-          <Image className="propose-image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image>
+          <div className="propose-image">
+            <Image className="image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image>
+          </div>
+          {/* <Image className="propose-image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image> */}
         </section>
         <section className="topics">
           <div className={`line line-odd`} id={`line1`}>
@@ -90,8 +95,11 @@ const Home: NextPage = () => {
           </div>
           <p>lorem Ipslum os serifaire aslqual</p>
         </section>
-        <section className="final-register-area">
-          <Image src={DaVinciSketches} className="da-vinci-sketches-image"></Image>
+        <section id="final-register-area">
+          <form action="">
+            <input id="subscribe-input" type="email" placeholder='youremail@gmail.com'/>
+            <button  id="subscribe-button" type="submit">Subscribe</button>
+          </form>
         </section>
       </main>
     </div>

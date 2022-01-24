@@ -222,14 +222,54 @@ section.topics {
 
 
 
-section.final-register-area {
+section#final-register-area {
   margin-top: 14em;
+  // height: 40rem;
+  height: 80em;
+  width: 100%;
+  background-image: url('../../assets/DaVinciSketches.svg');
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  border-radius: .5rem;
 
-  .da-vinci-sketches-image {
-    aspect-ratio: 16/9;
-    border-radius: .5rem;
-    filter: brightness(0.8);
+  #subscribe-input {
+    margin-right: -3em;
+    padding: 1em 2em;
+    padding-right: 4em;
+    border-radius: 1rem;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    border-bottom-right-radius: 5rem;
+    color: #000;
+
+    &:focus {
+      outline: none;
+    }
   }
+
+  #subscribe-button {
+    padding: 1em 3em;
+    // background-color: var(--bg-color);
+    background-color: #0a0908;
+    color: var(--text-color);
+    border: none;
+    border-radius: 1rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color .5s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: var(--title-color);
+    }
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
