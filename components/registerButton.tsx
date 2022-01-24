@@ -6,7 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 export function RegisterButton({...props}: ButtonProps) {
   return (
     <div>
-      <Link href={'/'}>
+      <Link href={'#final-register-area'}>
         <button
           {...props} >
           {props.children}
