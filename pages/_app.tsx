@@ -1,5 +1,5 @@
 import '../styles/global/globals.scss';
-import '../styles/pages/index.scss'
+import '../styles/pages/index.scss';
 
 import type { AppProps } from 'next/app';
 import Image from 'next/image';
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <header>
-        <Image src={logo} width={155} height={38} alt="Logo" />
+        <a href="/"><Image src={logo} width={155} height={38} alt="Logo" /></a>
         <nav className="navMenu">
           <a href="#">Home</a>
           <a href="#">History</a>
@@ -32,6 +32,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </header>
 
       <Component {...pageProps} />
+      <script src="../utils/navbar.js"></script>
+
     </>
   );
 }
