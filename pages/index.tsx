@@ -97,7 +97,7 @@ const Home: NextPage = () => {
         </section>
         <section id="final-register-area">
           <form action="">
-            <input id="subscribe-input" type="email" placeholder='youremail@gmail.com'/>
+            <input id="subscribe-input" type="email" placeholder='youremail@example.com'/>
             <button  id="subscribe-button" type="submit">Subscribe</button>
           </form>
         </section>
