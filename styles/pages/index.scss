@@ -158,10 +158,11 @@ section.resume {
 section.topics {
   z-index: 9;
   margin-top: 14em;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
-
+  transform: translate3d(0, 0, 0);
   gap: 1rem;
 
   .line {
@@ -174,6 +175,35 @@ section.topics {
 
     gap: 1.5rem;
 
+    &.line-odd {
+      animation: go-to-right 20s linear infinite alternate;
+
+      @keyframes go-to-right {
+        0% { transform: translateX(15%); }
+        100% { transform: translateX(calc(-15%))}
+      }
+    }
+
+    &.line-pair {
+      animation: go-to-left 20s linear infinite alternate;
+
+      @keyframes go-to-left {
+        0% { transform: translateX(-15%)}
+        100% { transform: translateX(15%); }
+      }
+    }
+  }
+
+  p {
+    margin-top: 3rem;
+    font-size: 4.5em;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .line {
     &.line-odd {
       animation: go-to-right 8s infinite alternate;
 
@@ -199,13 +229,6 @@ section.topics {
         }
       }
     }
-  }
-
-  p {
-    margin-top: 3rem;
-    font-size: 4.5em;
-    color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
   }
 }
 
