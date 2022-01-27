@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <main className="app">
+      <main className="app-index">
         <section className="initial">
           {/* <Canvas>
             <OrbitControls enableZoom={false} addEventListener={undefined} hasEventListener={undefined} removeEventListener={undefined} dispatchEvent={undefined} />
