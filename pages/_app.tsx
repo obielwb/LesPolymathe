@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Le Polymathes</title>
+        <title>Les Polymathes</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
