@@ -1,9 +1,11 @@
 import '../styles/global/globals.scss';
 import '../styles/pages/index.scss';
+import '../styles/pages/historic.scss';
 
 import type { AppProps } from 'next/app';
 import Image from 'next/image';
 import Head from 'next/head';
+
 
 import logo from '../assets/Les Polymathes.svg';
 import { RegisterButton } from '../components/registerButton';
@@ -23,17 +25,22 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <header>
-        <a href="/"><Image src={logo} width={155} height={38} alt="Logo" /></a>
+        <Link href={'/'}>
+          <a><Image src={logo} width={155} height={38} alt="Logo" /></a>
+        </Link>
         <nav className="navMenu">
-          <a href="#">Home</a>
-          <a href="#">History</a>
+          <Link href={'/'}>Home</Link>
+          <Link href={'/historic'}>Historic</Link>
           <div className="dot"></div>
         </nav>
+        <div className="menu-icon on-mobile">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </header>
 
       <Component {...pageProps} />
-      <script src="../utils/navbar.js"></script>
-
     </>
   );
 }
