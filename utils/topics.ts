@@ -1,204 +1,156 @@
 const line1 = [
   {
-    title: 'History',
-    imageSrc: ''
-  },
-  {
     title: 'Languages',
-    imageSrc: ''
   },
   {
     title: 'Art',
-    imageSrc: ''
   },
   {
     title: 'Culinary',
-    imageSrc: ''
-  },
-  {
-    title: 'Sports',
-    imageSrc: ''
-  },
-  {
-    title: 'Hobbies',
-    imageSrc: ''
   },
   {
     title: 'History',
-    imageSrc: ''
-  },
-  {
-    title: 'Languages',
-    imageSrc: ''
-  },
-  {
-    title: 'Art',
-    imageSrc: ''
-  },
-  {
-    title: 'Culinary',
-    imageSrc: ''
   },
   {
     title: 'Sports',
-    imageSrc: ''
   },
   {
     title: 'Hobbies',
-    imageSrc: ''
+  },
+  {
+    title: 'Woodwork',
+  },
+  {
+    title: 'Algorithms',
+  },
+  {
+    title: 'Society',
+  },
+  {
+    title: 'Architecture',
+  },
+  {
+    title: 'Economy',
+  },
+  {
+    title: 'Blockchain',
   },
 ];
 
 const line2 = [
   {
     title: 'Cinema',
-    imageSrc: ''
   },
   {
     title: 'News',
-    imageSrc: ''
   },
   {
     title: 'Technology',
-    imageSrc: ''
   },
   {
     title: 'Literature',
-    imageSrc: ''
   },
   {
     title: 'Science',
-    imageSrc: ''
   },
   {
     title: 'Music',
-    imageSrc: ''
   },
   {
-    title: 'Cinema',
-    imageSrc: ''
+    title: 'Sleep',
   },
   {
-    title: 'News',
-    imageSrc: ''
+    title: 'Government',
   },
   {
-    title: 'Technology',
-    imageSrc: ''
+    title: 'Persuasion',
   },
   {
-    title: 'Literature',
-    imageSrc: ''
+    title: 'Negotiating',
   },
   {
-    title: 'Science',
-    imageSrc: ''
+    title: 'Mathematics',
   },
   {
-    title: 'Music',
-    imageSrc: ''
+    title: 'Martial Arts',
   },
 ];
 
 const line3 =[
   {
     title: 'Health',
-    imageSrc: ''
   },
   {
     title: 'Creativity',
-    imageSrc: ''
   },
   {
     title: 'Inspiration',
-    imageSrc: ''
   },
   {
     title: 'Culture',
-    imageSrc: ''
   },
   {
     title: 'Travelling',
-    imageSrc: ''
   },
   {
     title: 'Design',
-    imageSrc: ''
   },
   {
-    title: 'Health',
-    imageSrc: ''
+    title: 'Physics',
   },
   {
-    title: 'Creativity',
-    imageSrc: ''
+    title: 'Memory',
   },
   {
-    title: 'Inspiration',
-    imageSrc: ''
+    title: 'Reading',
   },
   {
-    title: 'Culture',
-    imageSrc: ''
+    title: 'Anime',
   },
   {
-    title: 'Travelling',
-    imageSrc: ''
+    title: 'Astrophysics',
   },
   {
-    title: 'Design',
-    imageSrc: ''
+    title: 'Animation',
   }
 ];
 
 const line4 = [
   {
     title: 'Neuroscience',
-    imageSrc: ''
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Studying',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Climate',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Photography',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Geography',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Theater',
   },
   {
-    title: 'Neuroscience',
-    imageSrc: ''
+    title: 'Happiness',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Super-heros',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Relationships',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Mythology',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Gardening',
   },
   {
-    title: 'History',
-    imageSrc: ''
+    title: 'Pixel Art',
   }
 ];
 
