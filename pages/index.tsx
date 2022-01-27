@@ -47,15 +47,15 @@ const Home: NextPage = () => {
         <section className="resume">
           <div id="propose-text">
             <div id="propose-text-title">
-              <p>The Propose</p>
+              <p>The Purpose</p>
               <br />
             </div>
             <div id="propose-text-body">
               <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-                <br />
-                <br />
-                id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              The brain is the most powerful machine there is. So why not use and abuse it?
+              <br />
+              <br />
+              We want to bring you knowledge. So that you can become a greater version of yourself, being knowledgeable on many subjects and possessing many different skills.
               </p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Home: NextPage = () => {
           </div>
           {/* <Image className="propose-image" src={LibertyLeadingThePeople} alt="Liberty Leading the People - Art"></Image> */}
         </section>
-        <section className="topics">
+        <section className="topics" data-aos="fade-up" >
           <div className={`line line-odd`} id={`line1`}>
             {line1.map(topic => {
               return (
@@ -101,6 +101,7 @@ const Home: NextPage = () => {
             <button  id="subscribe-button" type="submit">Subscribe</button>
           </form>
         </section>
+
       </main>
     </div>
   );
