@@ -19,7 +19,7 @@
     "react-intersection-observer": "^8.33.1",
     "react-three-fiber": "^6.0.13",
     "sass": "^1.49.0",
-    "three": "^0.136.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
