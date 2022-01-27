@@ -1,4 +1,4 @@
-.app {
+.app-index {
   height: 100%;
   width: 100vw;
 
@@ -164,6 +164,32 @@ section.topics {
   flex-direction: column;
   transform: translate3d(0, 0, 0);
   gap: 1rem;
+
+  @mixin bg-gradient {
+    background: linear-gradient(to right,  var(--bg-color) 0%,rgba(255,255,255,0) 100%);
+  }
+
+  &::before,
+	&::after {
+    height: 100%;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+
+  &::after {
+    right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+    width: 200px;
+	}
+
+	&::before {
+    @include bg-gradient;
+    content: "";
+		left: 0;
+		top: 0;
+	}
 
   .line {
     position: relative;
