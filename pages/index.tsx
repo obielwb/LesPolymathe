@@ -5,11 +5,12 @@ import { useState } from 'react';
 
 type TopicImageProps = {
   image: string;
+  oddOrPair: string;
 }
 
 const TopicImage = (props: TopicImageProps) => {
   return (
-    <div className="topic">
+    <div className={`topic ${props.oddOrPair}`}>
 
     </div>
   )
