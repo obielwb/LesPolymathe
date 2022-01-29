@@ -9,18 +9,22 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <main className="home-app">
+      <div className="home-app">
         <section className="landing-page">
-
-          <div className="subscription">
-            <p>Wanna receive the knowledge to became a polymath?</p>
-            <p id="subscription-title">Subscribe in our <br /> newsletter</p>
-            <form action="">
-              <input type="text" name="User name" id="user-name" placeholder="Name" />
-              <input type="submit" value="" placeholder="youremail@example.com" />
-              <button type="submit"></button>
-            </form>
-          </div>
+          <aside>
+            <p>Explore <br />Knowledge</p>
+          </aside>
+          <main className="subscription">
+            <div>
+              <p>Wanna receive the knowledge to became a polymath?</p>
+              <p id="subscription-title">Subscribe in our <br /> newsletter</p>
+              <form action="">
+                <input type="text" name="userName" id="user-name" maxLength={20} placeholder="Name" />
+                <input type="email" value="" placeholder="youremail@example.com" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </main>
         </section>
         <section className="presentation">
 
@@ -31,7 +35,7 @@ const Home: NextPage = () => {
         <section className="final-subscribe-area">
 
         </section>
-      </main>
+      </div>
     </div>
   );
 };
