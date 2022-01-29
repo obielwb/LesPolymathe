@@ -1,6 +1,5 @@
 import '../styles/global/globals.scss';
 import '../styles/pages/index.scss';
-import '../styles/pages/historic.scss';
 
 import type { AppProps } from 'next/app';
 import Image from 'next/image';
@@ -8,7 +7,6 @@ import Head from 'next/head';
 
 
 import logo from '../assets/Les Polymathes.svg';
-import { RegisterButton } from '../components/registerButton';
 import Link from 'next/link';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -33,11 +31,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Link href={'/historic'}>Historic</Link>
           <div className="dot"></div>
         </nav>
-        <div className="menu-icon on-mobile">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
       </header>
 
       <Component {...pageProps} />
