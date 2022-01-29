@@ -124,5 +124,12 @@ section.presentation {
 
 
 section.why-subscribe {
+  width: min(100vw, 140rem);
 
+  padding: 3rem;
+
+  h2 {
+    position: absolute;
+    left: 10rem;
+  }
 }
