@@ -3,6 +3,18 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
+type TopicImageProps = {
+  image: string;
+}
+
+const TopicImage = (props: TopicImageProps) => {
+  return (
+    <div className="topic">
+
+    </div>
+  )
+}
+
 const Home: NextPage = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
@@ -27,7 +39,8 @@ const Home: NextPage = () => {
           </main>
         </section>
         <section className="presentation">
-
+          <h2>What is a <span>Polymath</span>?</h2>
+          <p></p>
         </section>
         <section className="why-subscribe">
 
