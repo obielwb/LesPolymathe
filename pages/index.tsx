@@ -42,9 +42,17 @@ const Home: NextPage = () => {
         <section className="presentation">
           <h2>What is a <span>Polymath</span>?</h2>
           <p></p>
+
+          <div id="topics">
+            <TopicImage image="#" oddOrPair="odd"/>
+            <TopicImage image="#" oddOrPair="pair"/>
+            <TopicImage image="#" oddOrPair="odd"/>
+            <TopicImage image="#" oddOrPair="pair"/>
+            <TopicImage image="#" oddOrPair="odd"/>
+          </div>
         </section>
         <section className="why-subscribe">
-
+          <h2>Why learn so many things?</h2>
         </section>
         <section className="final-subscribe-area">
 

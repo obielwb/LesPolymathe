@@ -6,6 +6,12 @@
   margin-top: 6.5rem;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
 section.landing-page {
   width: min(100vw, 140rem);
   display: flex;
@@ -83,4 +89,40 @@ section.landing-page {
       }
     }
   }
+}
+
+
+section.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #topics {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 3rem 0;
+
+    gap: 3rem;
+
+    .topic {
+      width: 19.9rem;
+      background: var(--contrast-color);
+      border-radius: .5rem;
+
+      &.odd {
+        height: 36rem;
+      }
+
+      &.pair {
+        height: 34rem;
+      }
+    }
+  }
+}
+
+
+section.why-subscribe {
+
 }
