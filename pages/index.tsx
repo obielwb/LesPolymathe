@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
+import MathModel from '../assets/math-model.svg';
+
 type TopicImageProps = {
   image: string;
   oddOrPair: string;
@@ -52,8 +54,10 @@ const Home: NextPage = () => {
         </section>
         <section className="presentation">
           <h2>What is a <span>Polymath</span>?</h2>
-          <p></p>
+          <p>A <span>polymath</span> is an individual whose knowledge spans a substantial number of subjects, <br />
+            being able to use them to solve the most diverse types of problems <br /> and challenges.</p>
 
+          <Image className="math-model-image" src={MathModel}></Image>
           <div id="topics">
             <TopicImage image="#" oddOrPair="odd"/>
             <TopicImage image="#" oddOrPair="pair"/>
