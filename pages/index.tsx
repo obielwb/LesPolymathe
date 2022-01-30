@@ -3,7 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import MathModel from '../assets/math-model.svg';
+import Topic1 from '../assets/topic1.svg';
+import Topic2 from '../assets/topic2.svg';
+import Topic3 from '../assets/topic3.svg';
+import Topic4 from '../assets/topic4.svg';
+import Topic5 from '../assets/topic5.svg';
 
 type TopicImageProps = {
   image: string;
@@ -13,7 +17,7 @@ type TopicImageProps = {
 const TopicImage = (props: TopicImageProps) => {
   return (
     <div className={`topic ${props.oddOrPair}`}>
-
+      <Image src={props.image} layout='responsive' objectFit='contain'></Image>
     </div>
   )
 }
@@ -57,17 +61,56 @@ const Home: NextPage = () => {
           <p>A <span>polymath</span> is an individual whose knowledge spans a substantial number of subjects, <br />
             being able to use them to solve the most diverse types of problems <br /> and challenges.</p>
 
-          <Image className="math-model-image" src={MathModel}></Image>
           <div id="topics">
-            <TopicImage image="#" oddOrPair="odd"/>
-            <TopicImage image="#" oddOrPair="pair"/>
-            <TopicImage image="#" oddOrPair="odd"/>
-            <TopicImage image="#" oddOrPair="pair"/>
-            <TopicImage image="#" oddOrPair="odd"/>
+            <div className="topic">
+              <Image src={Topic1} layout='responsive' objectFit='contain'></Image>
+            </div>
+            <div className="topic">
+              <Image src={Topic2} layout='responsive' objectFit='contain'></Image>
+            </div>
+            <div className="topic">
+              <Image src={Topic3} layout='responsive' objectFit='contain'></Image>
+            </div>
+            <div className="topic">
+              <Image src={Topic4} layout='responsive' objectFit='contain'></Image>
+            </div>
+            <div className="topic">
+              <Image src={Topic5} layout='responsive' objectFit='contain'></Image>
+            </div>
           </div>
         </section>
         <section className="why-subscribe">
-          <h2>Why learn so many things?</h2>
+          <main>
+            <h2>Why learn so many things?</h2>
+            <section className="reasons">
+              <div className="top">
+                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
+                  being knowledgeable <br />on many subjects and possessing many different skills.
+                </p>
+                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
+                  being knowledgeable <br />on many subjects and possessing many different skills.
+                </p>
+              </div>
+              <div className="bottom">
+                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
+                  being knowledgeable <br />on many subjects and possessing many different skills.
+                </p>
+                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
+                  being knowledgeable <br />on many subjects and possessing many different skills.
+                </p>
+              </div>
+            </section>
+          </main>
+          <p id="japanese">
+            好 <br />
+            奇 <br />
+            心 <br />
+            が <br />
+            広 <br />
+            が <br />
+            り <br />
+            ま <br />
+            す</p>
         </section>
         <section className="final-subscribe-area">
 

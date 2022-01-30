@@ -12,11 +12,15 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-section.landing-page {
+section {
   width: min(100vw, 140rem);
+  margin-bottom: 5rem;
+}
+
+section.landing-page {
   display: flex;
   align-items: stretch;
-  height: 100vh;
+  height: 60rem;
 
   margin-left: 3rem;
 
@@ -112,23 +116,21 @@ section.presentation {
     }
   }
 
-  .math-model-image {
-    position: absolute;
-  }
-
   #topics {
     display: flex;
     align-items: center;
     flex-direction: row;
 
-    margin: 3rem 0;
+    margin-top: 5rem;
 
     gap: 3rem;
 
     .topic {
       width: 19.9rem;
-      background: var(--contrast-color);
+      // height: 10rem;
       border-radius: .5rem;
+
+      // height: 10rem;
 
       &.odd {
         height: 36rem;
@@ -143,12 +145,42 @@ section.presentation {
 
 
 section.why-subscribe {
-  width: min(100vw, 140rem);
-
   padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  h2 {
-    position: absolute;
-    left: 10rem;
+  p#japanese {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+    position: relative;
+    top: -10rem;
+    right: 2rem;
+  }
+
+  main {
+    margin-left: 2rem;
+    width: min(80vw, 120rem);
+
+    section {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+
+      gap: 2rem;
+      div {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
   }
 }
