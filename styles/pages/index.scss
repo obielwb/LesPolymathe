@@ -200,6 +200,12 @@ section.presentation {
   flex-direction: column;
   align-items: center;
 
+  h2 {
+    span {
+      font-family: 'Seaweed Script', sans-serif;
+    }
+  }
+
   p {
     margin-top: 3rem;
 
