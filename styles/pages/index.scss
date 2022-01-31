@@ -18,22 +18,7 @@ section {
 }
 
 section.landing-page {
-  display: flex;
-  align-items: stretch;
-  height: 60rem;
-
-  margin-left: 3rem;
-
   aside {
-    flex: 9;
-
-    height: 89vh;
-
-    border-radius: .5rem;
-    background-color: black;
-
-    padding-left: 4rem;
-
     p {
       position: absolute;
       bottom: 8rem;
@@ -43,18 +28,7 @@ section.landing-page {
       color: #fff;
     }
   }
-
   .subscription {
-    flex: 8;
-    height: 89vh;
-
-    padding-left: 20rem;
-
-    > div {
-      position: absolute;
-      bottom: 6rem;
-    }
-
     p {
       font-size: 1.4rem;
       font-family: 'Roboto', sans-serif;
@@ -95,6 +69,130 @@ section.landing-page {
     }
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  section.landing-page {
+    display: flex;
+    align-items: stretch;
+    height: 60rem;
+
+    margin-left: 3rem;
+
+    aside {
+      flex: 7;
+
+      height: 89vh;
+
+      border-radius: .5rem;
+      background-color: black;
+
+      padding-left: 4rem;
+
+
+    }
+
+    .subscription {
+      flex: 8;
+      height: 89vh;
+
+      padding-left: 10em;
+
+      > div {
+        position: absolute;
+        bottom: 6rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  section.landing-page {
+    display: flex;
+    align-items: stretch;
+    height: 60rem;
+
+    margin-left: 3rem;
+
+    aside {
+      flex: 7;
+
+      height: 89vh;
+
+      border-radius: .5rem;
+      background-color: black;
+
+      padding-left: 4rem;
+
+
+    }
+
+    .subscription {
+      flex: 8;
+      height: 89vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      // padding-left: 15%;
+
+      > div {
+        position: absolute;
+        bottom: 6rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+
+    aside {
+      height: 89vh;
+      width: min(90vw, 60rem);
+
+      border-radius: .5rem;
+      background-color: black;
+
+      padding-left: 4rem;
+    }
+
+    .subscription {
+      padding: 4rem 0;
+      padding-left: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+
+    aside {
+      height: 89vh;
+      width: 95vw;
+
+      border-radius: .5rem;
+      background-color: black;
+
+      padding-left: 4rem;
+    }
+
+    .subscription {
+      padding: 4rem 0;
+      padding-left: 2.5rem;
+    }
+  }
+}
+
 
 
 section.presentation {
