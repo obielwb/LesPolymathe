@@ -58,8 +58,8 @@ const Home: NextPage = () => {
         </section>
         <section className="presentation">
           <h2>What is a <span>Polymath</span>?</h2>
-          <p>A <span>polymath</span> is an individual whose knowledge spans a substantial number of subjects, <br />
-            being able to use them to solve the most diverse types of problems <br /> and challenges.</p>
+          <p>A <span>polymath</span> is an individual whose knowledge spans a substantial number of subjects,
+            being able to use them to solve the most diverse types of problems and challenges.</p>
 
           <div id="topics">
             <div className="topic">
