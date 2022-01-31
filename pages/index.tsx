@@ -84,19 +84,19 @@ const Home: NextPage = () => {
             <h2>Why learn so many things?</h2>
             <section className="reasons">
               <div className="top">
-                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
-                  being knowledgeable <br />on many subjects and possessing many different skills.
+                <p>We want to bring you knowledge. So that you can become a greater version of yourself,
+                  being knowledgeable on many subjects and possessing many different skills.
                 </p>
-                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
-                  being knowledgeable <br />on many subjects and possessing many different skills.
+                <p>We want to bring you knowledge. So that you can become a greater version of yourself,
+                  being knowledgeable on many subjects and possessing many different skills.
                 </p>
               </div>
               <div className="bottom">
-                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
-                  being knowledgeable <br />on many subjects and possessing many different skills.
+                <p>We want to bring you knowledge. So that you can become a greater version of yourself,
+                  being knowledgeable on many subjects and possessing many different skills.
                 </p>
-                <p>We want to bring you knowledge. So that you can <br />become a greater version of yourself,
-                  being knowledgeable <br />on many subjects and possessing many different skills.
+                <p>We want to bring you knowledge. So that you can become a greater version of yourself,
+                  being knowledgeable on many subjects and possessing many different skills.
                 </p>
               </div>
             </section>
