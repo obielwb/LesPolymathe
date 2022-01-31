@@ -105,6 +105,8 @@ section.presentation {
   p {
     margin-top: 3rem;
 
+    width: min(70vw, 60rem);
+
     font-size: 1.4rem;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -143,6 +145,13 @@ section.presentation {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  section.presentation {
+    p {
+      width: 70vw;
+    }
+  }
+}
 
 section.why-subscribe {
   padding: 3rem;
