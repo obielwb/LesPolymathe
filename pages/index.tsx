@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           </aside>
           <main className="subscription">
             <div>
-              <p>Wanna receive the knowledge to became a polymath?</p>
+              <p>Wanna receive the knowledge <br />to became a polymath?</p>
               <p id="subscription-title">Subscribe in our <br /> newsletter</p>
               <form action="">
                 <input
