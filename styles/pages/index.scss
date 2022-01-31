@@ -281,11 +281,29 @@ section.why-subscribe {
         display: flex;
         flex-direction: row;
         gap: 4rem;
+        width: 100em;
 
         p {
           font-size: 1.4rem;
           font-weight: 500;
           font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.why-subscribe {
+    p#japanese {
+      top: -5rem;
+    }
+    main {
+      section {
+        gap: 4rem;
+        div {
+          flex-direction: column;
+          width: 60vw;
         }
       }
     }
